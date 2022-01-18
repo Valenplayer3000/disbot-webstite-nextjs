@@ -72,7 +72,7 @@ export default function Docs(){
         <main className={styles.main}>
             <h1 className={styles.title}>Welcome to <span className={styles.gradtitle}>Disbot</span> Documentation</h1>
             <br></br>
-            <Alert severity="warning">This page ins't quite complete yet. Come back later!</Alert>
+            <Alert severity="warning">This page is not complete yet. Come back later!</Alert>
         </main>
         <footer className={styles.footer}>
           <a
