@@ -68,7 +68,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #e2e2e2;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -140,7 +140,7 @@
 }
 
 .gradtitle{
-  background: -webkit-linear-gradient( #48a6ff, #0048e2);
+  background: -webkit-linear-gradient( #60b2ff, #003ec4);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
