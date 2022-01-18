@@ -50,7 +50,7 @@ export default function Docs(){
             sx={{ mr: 2 }}
           >
             
-            <Link href="./../"><ArrowBackIcon /></Link>
+            <Link href="./../" passHref><ArrowBackIcon /></Link>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Disbot
