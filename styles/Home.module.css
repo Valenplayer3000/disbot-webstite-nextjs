@@ -150,4 +150,10 @@
     width: 100%;
     flex-direction: column;
   }
+  .footer{
+    margin-left: 0%;
+    margin-bottom: 0px;
+    width: 100%;
+    box-shadow: none;
+  }
 }

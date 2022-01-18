@@ -10,11 +10,10 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
-import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
+import DownloadIcon from '@mui/icons-material/Download';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -37,6 +36,7 @@ function ElevationScroll(props) {
 }
 
 
+
 // HTML
 export default function Home() {
   return (
@@ -48,7 +48,7 @@ export default function Home() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Disbot
           </Typography>
-          <Button color="inherit" startIcon={<DownloadRoundedIcon />}><a href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot v0.1</a></Button>
+          <Button color="inherit" startIcon={<DownloadIcon />}><a href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot</a></Button>
           <Link href="./docs/docs" passHref><Button color="inherit" startIcon={<ArticleIcon />}><a>Docs</a></Button></Link>
         </Toolbar>
       </AppBar>
