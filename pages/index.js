@@ -1,7 +1,11 @@
+// React Module
 import * as React from 'react';
+// Next Module
 import Head from 'next/head';
+import Link from 'next/link'
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+// Material UI Module
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -14,12 +18,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import ArticleIcon from '@mui/icons-material/Article';
 
+
+
+// ElevationScroll for AppBar.
 function ElevationScroll(props) {
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
@@ -32,6 +37,7 @@ function ElevationScroll(props) {
 }
 
 
+// HTML
 export default function Home() {
   return (
     <>
@@ -39,19 +45,11 @@ export default function Home() {
     <ElevationScroll>
       <AppBar position="fixed">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Disbot
           </Typography>
           <Button color="inherit" startIcon={<DownloadRoundedIcon />}><a href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot v0.1</a></Button>
+          <Link href="./docs/docs"><Button color="inherit" startIcon={<ArticleIcon />}><a>Docs</a></Button></Link>
         </Toolbar>
       </AppBar>
     </ElevationScroll>
@@ -72,8 +70,6 @@ export default function Home() {
           </h1>
           <p className={styles.subtitle}>Download and start coding with our bot with <span className={styles.code}>discord.py</span></p>
           <br></br>
-          <Button variant="contained"><a href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot v0.1</a></Button>
-          <p className={styles.description}>New, Simple and Fun! </p>
 
 
           <Grid container direction="column" justifyContent="center" alignItems="stretch">
@@ -113,7 +109,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered and Thanks to Material UI and {' '}
+            Powered by Material UI and {' '}
             <span className={styles.logo}>
               <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
             </span>
@@ -121,4 +117,4 @@ export default function Home() {
         </footer>
       </div></>
   )
-}
+  }
