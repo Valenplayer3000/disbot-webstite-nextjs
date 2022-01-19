@@ -7,7 +7,7 @@ import Link from 'next/link'
 import styles from '../../styles/Home.module.css';
 // Material Design Components
 import Button from '@mui/material/Button';
-import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
+import DownloadIcon from '@mui/icons-material/Download';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -19,11 +19,8 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Alert from '@mui/material/Alert';
 
 // ElevationScroll for AppBar.
-function ElevationScroll(props) {
+function ElevationScroll(props) { // Well, I'm not sure if this is necessary.
     const { children, window } = props;
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
     const trigger = useScrollTrigger({
       disableHysteresis: true,
       threshold: 0,
@@ -55,7 +52,7 @@ export default function Docs(){
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Disbot
           </Typography>
-          <Button color="inherit" startIcon={<DownloadRoundedIcon />}><a href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot v0.1</a></Button>
+          <Button color="inherit" startIcon={<DownloadIcon />}><a href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot</a></Button>
           <Button color="inherit" startIcon={<ArticleIcon />}>Docs</Button>
         </Toolbar>
       </AppBar>
@@ -72,7 +69,10 @@ export default function Docs(){
         <main className={styles.main}>
             <h1 className={styles.title}>Welcome to <span className={styles.gradtitle}>Disbot</span> Documentation</h1>
             <br></br>
-            <Alert severity="warning">This page is not complete yet. Come back later!</Alert>
+            <Alert severity="info">Dowloads and use .docx files.</Alert>
+            <br></br>
+            <Button variant="contained"><a href="https://github.com/Valenplayer3000/Disbot-Documentation/archive/refs/tags/v0.1.zip">Download Documentation</a></Button>
+            <br></br>
         </main>
         <footer className={styles.footer}>
           <a

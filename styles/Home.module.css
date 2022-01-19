@@ -68,9 +68,19 @@
 
 .code {
   background: #f5f5f5;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  height: 20px;
+  font-size: 1.2rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.code_small {
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 0.30rem;
+  font-size: 0.9rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -145,7 +155,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -156,4 +166,29 @@
     width: 100%;
     box-shadow: none;
   }
+  .title{
+    font-size: 3rem;
+  }
+  .subtitle{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+
+.docs_title{
+  text-align: left;
+  margin-left: -90%;
+}
+
+.docs_p{
+  text-align: left;
+  margin-left: 0 auto;
+}
+
+.link_fluent{
+  background: -webkit-linear-gradient( #60b2ff, #003ec4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

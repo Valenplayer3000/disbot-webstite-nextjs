@@ -14,7 +14,6 @@ import DownloadIcon from '@mui/icons-material/Download';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import ArticleIcon from '@mui/icons-material/Article';
