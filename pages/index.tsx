@@ -88,8 +88,9 @@ export default function Home() {
             Disbot
           </Typography>
           <Button color="inherit" startIcon={<DownloadIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot</a></Button>
-          <Link href="./docs/docs" passHref><Button color="inherit" startIcon={<AssignmentIcon />}><a>Docs</a></Button></Link>
           <Link href="./blog/blog" passHref><Button color="inherit" startIcon={<ArticleIcon />}>Blog</Button></Link>
+          <Link href="./docs/docs" passHref><Button color="inherit" startIcon={<AssignmentIcon />}><a>Docs</a></Button></Link>
+          
         </Toolbar>
       </AppBar>
     </ElevationScroll>
