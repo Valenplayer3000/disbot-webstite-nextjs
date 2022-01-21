@@ -119,7 +119,7 @@ export default function Blog(){
                             Yes, actually.
                     </Typography>
                     <Typography variant="body2">
-                    So today, I started working with my websites made using next.js and Material UI (MUI). I'm taking a break from Disbot right now.  I think Ima back from break later.
+                    So today, I started working with my websites made using next.js and Material UI (MUI). I&apos;m taking a break from Disbot right now.  I think Ima back from break later.
                     </Typography>
                 </CardContent>
              </Card>
