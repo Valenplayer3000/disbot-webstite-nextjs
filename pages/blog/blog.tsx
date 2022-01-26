@@ -30,14 +30,14 @@ import HomeIcon from '@mui/icons-material/Home';
 let theme = createTheme({
   palette:{
     primary: {
-      main: '#9c27b0',
+      main: '#42a5f5',
     },
     secondary: {
       main: '#ab47bc',
     },
   },
   shape: {
-    borderRadius: 4,
+    borderRadius: 7,
   },
 });
 
@@ -87,9 +87,9 @@ export default function Blog(){
             <Link href="./../" passHref><HomeIcon /></Link>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Disbot
+            Disbot (v1.1)
           </Typography>
-          <Button color="inherit" startIcon={<DownloadIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot</a></Button>
+          <Button color="inherit" startIcon={<DownloadIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.2.zip"> Download Disbot</a></Button>
           <Link href="./../docs/docs" passHref><Button color="inherit" startIcon={<AssignmentIcon />}>Docs</Button></Link>
           <Button color="inherit" startIcon={<ArticleIcon />}>Blog</Button>
         </Toolbar>
@@ -109,7 +109,24 @@ export default function Blog(){
             <h1 className={styles.title}><span className={styles.gradtitle}>Blog</span></h1>
             <p className={styles.subtitle}>Welcome to Blog. (Well, this is a blog)</p>
             <br></br>
+            <h3 className={styles.subtitle}>26/1/22</h3>
+            <Card>
+              <CardContent>
+                <Typography variant="h5" component="div">
+                  Back to Disbot (From Break)
+                </Typography>
+                <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                            "Finally. It been a long time waiting" 
+                    </Typography>
+                    <Typography variant="body2">
+                        New update was been launched after finally returned from break. Looking forward for now.
+                    </Typography>
+              </CardContent>
+            </Card>
+            <br></br>
+            <br></br>
             <h3 className={styles.subtitle}>1/20/2022</h3>
+            <br></br>
             <Card sx={{ minWidth: 275 }}>
                 <CardContent>
                     <Typography variant="h5" component="div">

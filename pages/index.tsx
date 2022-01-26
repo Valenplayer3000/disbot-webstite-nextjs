@@ -25,14 +25,14 @@ import IconButton from '@mui/material/IconButton'
 let theme = createTheme({
   palette:{
     primary: {
-      main: '#9c27b0',
+      main: '#e57373',
     },
     secondary: {
       main: '#ab47bc',
     },
   },
   shape: {
-    borderRadius: 4,
+    borderRadius: 7,
   },
 });
 
@@ -68,7 +68,7 @@ function ElevationScroll(props) {
 // HTML
 export default function Home() {
   return (
-    <>
+    <> // Uses TSX to make the web work.
      <ThemeProvider theme={theme}>
     <Box sx={{ flexGrow: 1 }}>
     <ElevationScroll>
@@ -85,9 +85,9 @@ export default function Home() {
             <Link href="#" passHref><HomeIcon /></Link>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Disbot
+            Disbot (v1.1)
           </Typography>
-          <Button color="inherit" startIcon={<DownloadIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot</a></Button>
+          <Button color="inherit" startIcon={<DownloadIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.2.zip"> Download Disbot</a></Button>
           <Link href="./blog/blog" passHref><Button color="inherit" startIcon={<ArticleIcon />}>Blog</Button></Link>
           <Link href="./docs/docs" passHref><Button color="inherit" startIcon={<AssignmentIcon />}><a>Docs</a></Button></Link>
           
@@ -118,25 +118,13 @@ export default function Home() {
               <CardContent>
                 <h2>New.</h2>
                 <p>The Bot is new, so they are ready to use.</p>
-              </CardContent>
-            </Card>
             <br></br>
-            <Card>
-              <CardContent>
                 <h2>Simple.</h2>
                 <p>The bot is made simple. Using python and Discord.py!</p>
-              </CardContent>
-            </Card>
             <br></br>
-            <Card>
-              <CardContent>
                 <h2>Fun.</h2>
                 <p>This bot is so Fun. So you can use these joke commands (Like ban and kick commands)</p>
-              </CardContent>
-            </Card>
             <br></br>
-            <Card>
-              <CardContent>
                 <h2>Modify.</h2>
                 <p>This bot can be forked thanks to open source.</p>
               </CardContent>

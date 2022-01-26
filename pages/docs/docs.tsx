@@ -21,20 +21,22 @@ import Alert from '@mui/material/Alert';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import HomeIcon from '@mui/icons-material/Home';
-import NoteIcon from '@mui/icons-material/Note'
+import NoteIcon from '@mui/icons-material/Note';
+import Card from '@mui/material/Card';
+import CardAction from '@mui/material/CardActions'
 
 // MUI: theming
 let theme = createTheme({
   palette:{
     primary: {
-      main: '#9c27b0',
+      main: '#ff8a65',
     },
     secondary: {
       main: '#ab47bc',
     },
   },
   shape: {
-    borderRadius: 4,
+    borderRadius: 7,
   },
 });
 
@@ -67,7 +69,8 @@ function ElevationScroll(props) { // Well, I'm not sure if this is necessary.
 
 export default function Docs(){
     return (
-        <><ThemeProvider theme={theme}>
+        <>
+        <ThemeProvider theme={theme}>
         <Box sx={{ flexGrow: 1 }}>
     <ElevationScroll>
       <AppBar position="fixed">
@@ -83,9 +86,9 @@ export default function Docs(){
             <Link href="./../" passHref><HomeIcon /></Link>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Disbot
+            Disbot (v1.1)
           </Typography>
-          <Button color="inherit" startIcon={<DownloadIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.1.zip"> Download Disbot</a></Button>
+          <Button color="inherit" startIcon={<DownloadIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot/archive/refs/tags/Stable-0.2.zip"> Download Disbot</a></Button>
           <Button color="inherit" startIcon={<AssignmentIcon />}>Docs</Button>
           <Link href="../blog/blog" passHref><Button color="inherit" startIcon={<ArticleIcon />}>Blog</Button></Link>
         </Toolbar>
@@ -106,7 +109,12 @@ export default function Docs(){
             <br></br>
             <Alert severity="info">Dowloads, excract and open <span className={styles.code_small}>documentation.docx</span>files.</Alert>
             <br></br>
-            <Button variant="contained" startIcon={<NoteIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot-Documentation/archive/refs/tags/v0.1.zip">Download Documentation</a></Button>
+            <br></br>
+            <Card>
+              <CardAction>
+                <Button startIcon={<NoteIcon />}><a className={styles.link_fix} href="https://github.com/Valenplayer3000/Disbot-Documentation/archive/refs/tags/v0.1.zip">Download Documentation</a></Button>
+              </CardAction>
+            </Card>
             <br></br>
         </main>
         <footer className={styles.footer}>
