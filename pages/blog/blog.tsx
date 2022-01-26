@@ -116,7 +116,7 @@ export default function Blog(){
                   Back to Disbot (From Break)
                 </Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            "Finally. It been a long time waiting" 
+                            &quot;Finally. It been a long time waitings&quot; 
                     </Typography>
                     <Typography variant="body2">
                         New update was been launched after finally returned from break. Looking forward for now.
