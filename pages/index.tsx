@@ -68,7 +68,7 @@ function ElevationScroll(props) {
 // HTML
 export default function Home() {
   return (
-    <> // Uses TSX to make the web work.
+    <>
      <ThemeProvider theme={theme}>
     <Box sx={{ flexGrow: 1 }}>
     <ElevationScroll>
